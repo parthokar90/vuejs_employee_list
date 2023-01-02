@@ -10,7 +10,7 @@
             <td>Status</td>
          </tr>
 
-         <tr v-for="item in AllEmployeList" :key="item.id">
+         <tr v-for="item in allEmployeList" :key="item.id">
             <td>{{item.id}}</td>
             <td>{{item.name}}</td>
             <td>{{item.status}}</td>
@@ -65,14 +65,14 @@ table tr td{
 <script>
 export default {
   props: {
-    AllEmployeList:[],
+    allEmployeList:[],
   },
   computed: {
   activeEmployee: function () {
-    return this.AllEmployeList.filter(i => i.status === 'Active')
+    return this.allEmployeList.filter(i => i.status === 'Active')
   },
   inactiveEmployee: function () {
-   return this.AllEmployeList.filter(i => i.status === 'Inactive')
+   return this.allEmployeList.filter(i => i.status === 'Inactive')
   }
 }
 }
