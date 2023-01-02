@@ -1,5 +1,5 @@
 <template>
-     <EmployeeList :AllEmployeList="AllEmployeList"/>
+     <EmployeeList :allEmployeList="allEmployeList"/>
 </template>
 
 <script>
@@ -11,7 +11,7 @@ export default {
   },
   data(){
     return {
-      AllEmployeList:[
+      allEmployeList:[
       {
         id:'001',
         name:'Tanveer Vaia',
